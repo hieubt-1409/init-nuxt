@@ -1,40 +1,23 @@
 <template>
   <div class="container">
-    <div>
-      <logo />
+    <div class="heading">
       <h1 class="title">
-        init-nuxt
+        Home
       </h1>
-      <h2 class="subtitle">
-        My beautiful Nuxt.js project
-      </h2>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          class="button--green"
-        >
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          class="button--grey"
-        >
-          GitHub
-        </a>
-      </div>
+    </div>
+    <div>
+      <h2>Some id for dynamic routes:</h2>
+      <nav>
+        <nuxt-link to="/1">Index 1</nuxt-link>
+        <nuxt-link to="/2">Index 2</nuxt-link>
+      </nav>
     </div>
   </div>
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
-
 export default {
-  components: {
-    Logo
-  }
+  layout: 'dashboard'
 }
 </script>
 
@@ -47,10 +30,6 @@ export default {
 .container {
   margin: 0 auto;
   min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
 }
 
 .title {
@@ -58,7 +37,6 @@ export default {
     'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
   display: block;
   font-weight: 300;
-  font-size: 100px;
   color: #35495e;
   letter-spacing: 1px;
 }
@@ -73,5 +51,16 @@ export default {
 
 .links {
   padding-top: 15px;
+}
+
+.heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.routing {
+  width: 100%;
 }
 </style>

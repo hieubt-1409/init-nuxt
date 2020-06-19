@@ -1,5 +1,8 @@
 <template>
   <div>
+    <div>
+      Default layouts
+    </div>
     <nuxt />
   </div>
 </template>
