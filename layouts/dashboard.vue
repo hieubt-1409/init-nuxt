@@ -8,7 +8,8 @@
           <nuxt-link to="/work" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">Work</nuxt-link>
           <nuxt-link to="/contact" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">Contact</nuxt-link>
           <nuxt-link to="/dashboard" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">Dashboard</nuxt-link>
-          <nuxt-link to="/todos" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">Todo list</nuxt-link>
+          <nuxt-link to="/users" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">User list</nuxt-link>
+          <nuxt-link to="/posts/1" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">Post #1</nuxt-link>
         </div>
       </div>
     </nav>
